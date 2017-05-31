@@ -1,6 +1,6 @@
 {
   "name": "ngsessiontimeout",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "ngSessionTimeout.bundle.js",
   "module": "ngSessionTimeout.module.js",
   "jsnext:main": "ngSessionTimeout.module.js",

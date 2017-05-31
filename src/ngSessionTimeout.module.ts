@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
+import {TimeoutDirective} from "./ngSessionTimeout.directive";
 import {StoreModule} from "@ngrx/store";
 import {timeoutReducer} from "./ngSessionTimeout.reducer";
-import {TimeoutDirective} from "./ngSessionTimeout.directive";
 
 @NgModule({
   declarations: [
     TimeoutDirective
   ],
-  imports: [],
+  imports: [
+      StoreModule.provideStore({timeoutReducer})
+  ],
   exports: [
     TimeoutDirective
   ],
